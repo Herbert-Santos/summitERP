@@ -1,0 +1,960 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-color: black;
+    font-family: 'Comfortaa', cursive;
+    align-items:center;
+    position: sticky;
+    top: 0;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header img {
+    width: 150px;
+    margin-right: 400px;
+    margin-left: 100px;
+}
+section img {
+    width: 1450px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 40;
+    margin: 20px;
+}
+body {
+    margin: 0;
+    position: relative;
+    /*padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+button {
+    padding: 20px 60px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border: 0;
+    background-color: #FFAD00;
+    color: #fff;
+}
+
+.formulario {
+    background: url('../Assets/diversos/Capa-I-1-scaled.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    width:100%;
+    height:100vh;
+}
+.elementor-background-video-embed{
+    width:100%;
+    height:700px;
+}
+.card-box {
+    /*background-color: orange;*/
+    background: url('../Assets/diversos/Capa-I-1-scaled.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    display: flex;
+    width:100%;
+    height:700px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.baners {
+    /*opacity: 0.7;*/
+    width:25%;
+    height:60%;
+    background-color:black;
+    margin: 0px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto", Sans-serif;
+}
+.conteiner-1 {
+    margin: 45px;
+}
+.conteiner-icon {
+    text-align: center;
+    margin: 40px;
+}
+.conteiner-texto {
+    text-align: center;
+    margin: 40px;
+    font-weight: bolder;
+    color: #FFAD00;
+    line-height: 2.0;
+    /*letter-spacing: 4px;*/
+}
+.conteiner-texto-maior {
+    text-align: center;
+    line-height: 1.5;
+}
+.conteiner-info{
+    /*opacity: 0.5;*/
+    background: url('../Assets/diversos/Capa-I-1-scaled.jpg') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: color;
+    width:100%;
+    height:700px;
+    display: flex;    
+}
+.conteiner-escrita-1 {
+    /*background-color: black;*/
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto", Sans-serif;
+    margin: 50px;
+    width: 50%;
+    height: 400px;
+}
+.conteiner-titulo {
+    margin: 40px;
+    color: #FFF;
+    font-size: 15px;
+}
+.conteiner-texto-info{
+    margin: 40px;
+    letter-spacing: 2px;
+}
+.conteiner-video{
+    /*background-color: black;*/
+    margin: 50px;
+    width: 50%;
+    height: 400px;
+}
+.video {
+    width: 100%;
+    height: 100%;
+}
+.informacao {
+    background-color: #484745;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.beneficios-do-evento {
+    background-color: black;
+    width:100%;
+    height:200px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Roboto", Sans-serif;
+    letter-spacing: 1px;
+    line-height: 3.0;
+}
+.foto-evento{
+    background: center/cover url('Assets/diversos1/ERPSummit-00289-min-1536x1024.jpg.webp');
+    width: 100%;
+    height: 100%;
+}
+.foto-evento-2{
+    background: center/cover url('Assets/diversos1/ERPSummit-00336-min-1536x1024.jpg.webp');
+    width: 100%;
+    height: 100%;
+}
+.foto-evento-3{
+    background: center/cover url('Assets/diversos1/ERPSummit-00497-1-1536x1024.jpg.webp');
+    width: 100%;
+    height: 100%;
+}
+.foto-evento-palestrante-1{
+    background: center/cover url('../Assets/palestrantes/s8chAyk4-1536x1122.jpeg.webp');
+    width: 100%;
+    height: 100%;
+}
+.foto-evento-palestrante-2{
+    background: center/cover url('../Assets/palestrantes/fernando-nakagawa-palestrante-conferencista-palestras-de-sucesso-1-1536x1122.jpg.webp');
+    width: 100%;
+    height: 100%;
+}
+.foto-evento-palestrante-3{
+    background: center/cover url('../Assets/palestrantes/760x570-IMAGEM-PORTAL-2023-04-18T121816.300.png.webp');
+    width: 100%;
+    height: 100%;
+}
+.foto-evento-palestrante-4{
+    background: center/cover url('../Assets/palestrantes/administradores.png.webp');
+    width: 100%;
+    height: 100%;
+}
+.foto-evento-erpsummit{
+    background: center/cover url('../Assets/diversos/1160-ERP-Summit-2023-Maior-evento-de-software-e-gestao-da-America-Latina-YouTube-1.png');
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: orange;
+}
+.palestrante {
+    background-color:#484745;
+    width:100%;
+    height:700px;
+    display: flex;
+}
+.linkedin-l1{
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.conteiner-linkedin-palestrantes{
+    background-color: black;
+    flex-direction: column;
+    width:100%;
+}
+.conteiner-linkedin-palestrantes h4{
+    color: #FFAD00;
+}   
+.conteiner-agenda{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
+}
+.agenda{
+    display: flex;
+    flex-direction: column;
+}
+.agenda-linha{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid tomato;
+    padding: 5px;
+}
+.agenda-linha div{
+    background-color: #FFAD00;
+}
+.conteiner-expositores {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width:100%;
+    color: black;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "Roboto", Sans-serif;
+    line-height: 4.0;
+}
+.conteiner-galeria{
+    background-color: black;
+    display: flex;
+    width:100%;
+    height:500px;
+    font-size: 15px;
+    font-family: "Roboto", Sans-serif;
+    display: flex;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.titulo-expositores {
+    color: #FFAD00;
+}
+.conteiner-footer {
+    background-color: dimgrey;
+    display: flex;
+    width:100%;
+    height:60px;
+    font-size: 15px;
+    font-family: "Roboto", Sans-serif;
+    display: flex;
+    color: #fff;
+}
+.secao {
+    background-color: black;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    height:100px;
+    font-family: "Roboto", Sans-serif;
+    align-items: center;
+}
+.secao-conteudo {
+text-align: center;
+}
+.expositores {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+/*EXPOSITORES SOPPHIRE LINHA 1*/
+.conteudo-expositores-sapphire{
+    background: center/cover url('../Assets/expositores/nexxera.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES DIAMOND LINHA 1*/
+.conteudo-expositores-Diamond-1 {
+    background: center/cover url('../Assets/expositores/Microsoft-logo_rgb_c-gray-1536x688.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Diamond-2 {
+    background: center/cover url('../Assets/expositores/OracleNetSuite_vert-200x100px.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Diamond-3 {
+    background: center/cover url('../Assets/expositores/WhatsApp-Image-2022-11-22-at-17.34.01.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Diamond-l2-1 {
+    background: center/cover url('../Assets/expositores/Senior-Sistemas-logotipo-200x100px-min.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Diamond-l2-2 {
+    background: center/cover url('../Assets/expositores/Aarin-06-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Diamond-l2-3 {
+    background: center/cover url('../Assets/expositores/WhatsApp-Image-2023-03-02-at-09.53.29.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Diamond-l3-1 {
+    background: center/cover url('../Assets/expositores/logo-Alterdata-200x100px-min.png.webp');
+    width:20%;
+    height:140px;
+}
+
+/*EXPOSITORES PLATINUM LINHA 1*/
+.conteudo-expositores-Platinum-1 {
+    background: center/cover url('../Assets/expositores/photo_2022-11-22_17-21-24.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-2 {
+    background: center/cover url('../Assets/expositores/thumbnail_1643199347271000_1320943451.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-3 {
+    background: center/cover url('../Assets/expositores/Imagem-do-WhatsApp-de-2023-01-30-as-17.45.18.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-l2-1 {
+    background: center/cover url('../Assets/expositores/Imagem-do-WhatsApp-de-2023-01-31-as-12.33.52.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-l2-2 {
+    background: center/cover url('../Assets/expositores/marcas_optidata_200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-l2-3 {
+    background: center/cover url('../Assets/expositores/LOGO-SKYONE-min.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-l3-1 {
+    background: center/cover url('../Assets/expositores/logo-weni-completo-verde-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-l3-2 {
+    background: center/cover url('../Assets/expositores/AWS_logo_RGB-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-l3-3 {
+    background: center/cover url('../Assets/expositores/Imagem-do-WhatsApp-de-2023-02-10-as-11.56.25.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Platinum-l4-1 {
+    background: center/cover url('../Assets/expositores/huawei.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES GOLD LINHA 1*/
+.conteudo-expositores-Gold-1 {
+    background: center/cover url('../Assets/expositores/saveincloud-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-2 {
+    background: center/cover url('../Assets/expositores/FALTA');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-3 {
+    background: center/cover url('../Assets/expositores/logo-iugu-e1550684255333.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l2-1 {
+    background: center/cover url('../Assets/expositores/riosoft-logo-transparent-bg-1-1.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l2-2 {
+    background: center/cover url('../Assets/expositores/Nasajon-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l2-3 {
+    background: center/cover url('../Assets/expositores/FALTA');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l3-1 {
+    background: center/cover url('../Assets/expositores/telcomanager-04-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l3-2 {
+    background: center/cover url('../Assets/expositores/FALTA');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l3-3 {
+    background: center/cover url('../Assets/expositores/FALTA');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l4-1 {
+    background: center/cover url('../Assets/expositores/Ottech-Logo-Versao-Alternativa-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l4-2 {
+    background: center/cover url('../Assets/expositores/erpflex.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l4-3 {
+    background: center/cover url('../Assets/expositores/bry.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l5-1 {
+    background: center/cover url('../Assets/expositores/BMP-Logo-Tagline-Positivo-200x100px-copy.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Gold-l5-2 {
+    background: center/cover url('../Assets/expositores/marca_mitra_200x100px_fundobranco.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-pmas {
+    background: center/cover url('../Assets/expositores/Greenpeace200x100px.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-tpsv {
+    background: center/cover url('../Assets/expositores/medico-sem-fronteira.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES APOIADORES LINHA 1*/
+.conteudo-expositores-Apoiadores-1 {
+    background: center/cover url('../Assets/expositores/abes.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-2 {
+    background: center/cover url('../Assets/expositores/logo_brasscom.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-3 {
+    background: center/cover url('../Assets/expositores/assespro_logo_rgb_SP-1.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l2-1 {
+    background: center/cover url('../Assets/expositores/fecomercio.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l2-2 {
+    background: center/cover url('../Assets/expositores/FALTA');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l2-3 {
+    background: center/cover url('../Assets/expositores/acate.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l3-1 {
+    background: center/cover url('../Assets/expositores/StartSe_.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l3-2 {
+    background: center/cover url('../Assets/expositores/FALTA');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l3-3 {
+    background: center/cover url('../Assets/expositores/cryptoid.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l4-1 {
+    background: center/cover url('../Assets/expositores/mundocoop.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l4-2 {
+    background: center/cover url('../Assets/expositores/administradores.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l4-3 {
+    background: center/cover url('../Assets/expositores/FALTA');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l5-1 {
+    background: center/cover url('../Assets/expositores/acic_logo_final-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l5-2 {
+    background: center/cover url('../Assets/expositores/abbc-200x100px.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l5-3 {
+    background: center/cover url('../Assets/expositores/ios-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-Apoiadores-l6-1 {
+    background: center/cover url('../Assets/expositores/sescon-200x100px.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES ORGANIZACAO LINHA 1*/
+.conteudo-expositores-Organização{
+    background: center/cover url('../Assets/expositores/Logo_Portal_ERP-200x100px.jpg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES CREDENCIAMENTO LINHA 1*/
+.conteudo-expositores-Credenciamento{
+    background: center/cover url('../Assets/expositores/bom-evento-200x100-1.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 1*/
+.conteudo-expositores-l1-1{
+    background: center/cover url('../Assets/expositores/galaxpay.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l1-2{
+    background: center/cover url('../Assets/expositores/genexusa.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l1-3{
+    background: center/cover url('../Assets/expositores/Focco-200x100px.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 2*/
+.conteudo-expositores-l2-1{
+    background: center/cover url('../Assets/expositores/datasafer.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l2-2{
+    background: center/cover url('../Assets/expositores/logo-gestaoclick-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l2-3{
+    background: center/cover url('../Assets/expositores/grv-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 3*/
+.conteudo-expositores-l3-1{
+    background: center/cover url('../Assets/expositores/NDD-200x100px.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l3-2{
+    background: center/cover url('../Assets/expositores/PLOOMES_Imagotipo_Roxo_Vertical-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l3-3{
+    background: center/cover url('../Assets/expositores/logo_erp_m8_alta-200x100px-min-1.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 4*/
+.conteudo-expositores-l4-1{
+    background: center/cover url('../Assets/expositores/logo-ITS-preto-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l4-2{
+    background: center/cover url('../Assets/expositores/humtech-1.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l4-3{
+    background: center/cover url('../Assets/expositores/Logo-BIMachine-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 5*/
+.conteudo-expositores-l5-1{
+    background: center/cover url('../Assets/expositores/opendata-center.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l5-2{
+    background: center/cover url('../Assets/expositores/shark-200x100-1.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l5-3{
+    background: center/cover url('../Assets/expositores/AllStrategy-200x100px.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 6*/
+.conteudo-expositores-l6-1{
+    background: center/cover url('../Assets/expositores/Nosso-200x100px.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l6-2{
+    background: center/cover url('../Assets/expositores/CMA-200x100px.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l6-3{
+    background: center/cover url('../Assets/expositores/logo-videosoft-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 7*/
+.conteudo-expositores-l7-1{
+    background: center/cover url('../Assets/expositores/Imagem-do-WhatsApp-de-2023-02-10-as-11.57.27.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l7-2{
+    background: center/cover url('../Assets/expositores/logo-ixc-soft.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l7-3{
+    background: center/cover url('../Assets/expositores/Imagem-do-WhatsApp-de-2023-02-10-as-11.57.55.jpg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 8*/
+.conteudo-expositores-l8-1{
+    background: center/cover url('../Assets/expositores/Logo_Analize_Final-fundo-transparente562-200-100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l8-2{
+    background: center/cover url('../Assets/expositores/PNG-LOGO-horizontal560-200-100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l8-3{
+    background: center/cover url('../Assets/expositores/Arquivar-Logo-P-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 9*/
+.conteudo-expositores-l9-1{
+    background: center/cover url('../Assets/expositores/piperun.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l9-2{
+    background: center/cover url('../Assets/expositores/Banco_BS2-200x100px.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l9-3{
+    background: center/cover url('../Assets/expositores/Belvo_logo_color-200x100px-1.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 10*/
+.conteudo-expositores-l10-1{
+    background: center/cover url('../Assets/expositores/WhatsApp-Image-2023-03-23-at-08.43.52-3.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l10-2{
+    background: center/cover url('../Assets/expositores/tecnicon.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l10-3{
+    background: center/cover url('../Assets/expositores/Logo-APIPASS-02-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 11*/
+.conteudo-expositores-l11-1{
+    background: center/cover url('../Assets/expositores/eme4.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l11-2{
+    background: center/cover url('../Assets/expositores/WhatsApp-Image-2023-03-23-at-08.43.53.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l11-3{
+    background: center/cover url('../Assets/expositores/evernow.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 12*/
+.conteudo-expositores-l12-1{
+    background: center/cover url('../Assets/expositores/MultiplusCard_logo_HD-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l12-2{
+    background: center/cover url('../Assets/expositores/sends.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-l12-3{
+    background: center/cover url('../Assets/expositores/Logo-WK-Technology-Aplic-Fundo-Branco-200x100px.png.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES SILVER LINHA 13*/
+.conteudo-expositores-l13-1{
+    background: center/cover url('../Assets/expositores/nexxer.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+
+/*LINKEDIN*/
+.card {
+    width:30%;
+    height:30%;
+    padding: 5px;
+}
+.container p{
+    line-height: 1.5;
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.botao {
+    background-color:#484745;
+    display: flex;
+    align-items: center;
+}
+/*CARROSEL*/
+.slider {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.slider-principal {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide-1 {
+    width: 25%;
+    position: relative;
+}
+.slide-1 img {
+    width: 800px;
+}
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid tomato;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #FFF;
+}
+.navigation-auto div{
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFAD00;
+}
+.wrapper  i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor:pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    background: #FFF;
+    color: #FFAD00;
+    transform: translatey(-50%);
+}
+
+.wrapper  i:first-child{
+    left: -23px;
+}
+.wrapper  i:last-child{
+    right: -23px;
+}
+.wrapper .carousel{
+    font-size: 0;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+}
+.carousel img{
+    height: 240px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+.menu {
+    font-family: "Roboto", Sans-serif;
+}
+.conteiner-iten {
+    background-color: aqua;
+}
+.conteiner-interno {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100%/2);
+    }
+}
+@media screen and (max-width: 550px){
+    .carousel img{
+        width: 100%;
+    }
+}
+
+#radio-1:checked ~ .first {
+    margin-left: 0;
+}
+#radio-2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio-3:checked ~ .first {
+    margin-left: -50%;
+}
+#radio-4:checked ~ .first {
+    margin-left: -75%;
+}
+#inicio:hover {
+    color: #FFAD00;
+}
+#expositores:hover {
+    color: #FFAD00;
+}
+#maisInformacoes:hover {
+    color: #FFAD00;
+}
+#Planta:hover {
+    color: #FFAD00;
+}
+#SejaUmExpositor:hover {
+    color: #FFAD00;
+}
