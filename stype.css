@@ -220,21 +220,6 @@ button {
     height:700px;
     display: flex;
 }
-.linkedin-l1{
-    align-items: baseline;
-    display: flex;
-    flex-direction: row;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.conteiner-linkedin-palestrantes{
-    background-color: black;
-    flex-direction: column;
-    width:100%;
-}
-.conteiner-linkedin-palestrantes h4{
-    color: #FFAD00;
-}   
 .conteiner-agenda{
     padding: 3px;
     display: flex;
@@ -784,11 +769,50 @@ text-align: center;
 }
 
 /*LINKEDIN*/
-.card {
+/*.card {
     width:30%;
     height:30%;
     padding: 5px;
+}*/
+
+.card {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .card h3 {
+    color: #FFAD00;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .card p {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+  }
+#card-linkedin{
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  #linkedin{
+    display: flex;
+    flex-direction: column;
 }
+
 .container p{
     line-height: 1.5;
     color: #FFF;
