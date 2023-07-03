@@ -44,13 +44,16 @@ body {
     
 button {
     padding: 20px 60px;
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+    border-radius: 20px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bolder !important;
     border: 0;
-    background: #FFAD00;
-    color: #fff;
+    background: #FFAD00 !important;
+    color: #fff !important;
     cursor: pointer;
+}
+button:hover{
+    color: black !important;
 }
 
 .formulario {
@@ -95,8 +98,12 @@ button {
     margin-left: 0;
   }
   .icon{
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
+  }
+  .icon i{
+    size: 20px;
+    color: #eee !important;
   }
   .icon img{
     width: 100%;
@@ -290,15 +297,10 @@ button {
     flex-direction: column;
 }
 .agenda-linha{
-    background-color: #FFF;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     border: 2px solid tomato;
-    padding: 5px;
 }
 .agenda-linha div{
-    background-color: #FFAD00;
 }
 .conteiner-galeria{
     background-color: black;
@@ -318,6 +320,7 @@ button {
 }
 .titulo-expositores {
     color: #FFAD00;
+    font-weight: bolder;
 }
 .conteiner-footer {
     background-color: dimgrey;
@@ -348,6 +351,27 @@ text-align: center;
     width:100%;
     display: flex;
     justify-content: space-around;
+}
+/*CLASSE BOOTSTRAP*/
+.dia-bootstrap h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.col img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.expositores div{
+    padding: auto;
 }
 .foto-evento{
     background: center/cover url('Assets/diversos1/ERPSummit-00289-min-1536x1024.jpg.webp');
@@ -494,7 +518,7 @@ text-align: center;
     height:140px;
 }
 .conteudo-expositores-Gold-2 {
-    background: center/cover url('../Assets/expositores/FALTA');
+    background: center/cover url('../Assets/expositores/edutivo.jpeg.webp');
     width:20%;
     height:140px;
 }
@@ -514,7 +538,7 @@ text-align: center;
     height:140px;
 }
 .conteudo-expositores-Gold-l2-3 {
-    background: center/cover url('../Assets/expositores/FALTA');
+    background: center/cover url('../Assets/expositores/skymail.webp');
     width:20%;
     height:140px;
 }
@@ -524,12 +548,12 @@ text-align: center;
     height:140px;
 }
 .conteudo-expositores-Gold-l3-2 {
-    background: center/cover url('../Assets/expositores/FALTA');
+    background: center/cover url('../Assets/expositores/centric.webp');
     width:20%;
     height:140px;
 }
 .conteudo-expositores-Gold-l3-3 {
-    background: center/cover url('../Assets/expositores/FALTA');
+    background: center/cover url('../Assets/expositores/trio.webp');
     width:20%;
     height:140px;
 }
@@ -590,12 +614,12 @@ text-align: center;
     height:140px;
 }
 .conteudo-expositores-Apoiadores-l2-2 {
-    background: center/cover url('../Assets/expositores/FALTA');
+    background: center/cover url('../Assets/expositores/acate.jpeg.webp');
     width:20%;
     height:140px;
 }
 .conteudo-expositores-Apoiadores-l2-3 {
-    background: center/cover url('../Assets/expositores/acate.jpeg.webp');
+    background: center/cover url('../Assets/expositores/LOGO-ACATE-E-ASSESPRO-01-2-1200x100px.png.webp');
     width:20%;
     height:140px;
 }
@@ -605,7 +629,7 @@ text-align: center;
     height:140px;
 }
 .conteudo-expositores-Apoiadores-l3-2 {
-    background: center/cover url('../Assets/expositores/FALTA');
+    background: center/cover url('../Assets/expositores/infor-channel.png.webp');
     width:20%;
     height:140px;
 }
@@ -625,7 +649,7 @@ text-align: center;
     height:140px;
 }
 .conteudo-expositores-Apoiadores-l4-3 {
-    background: center/cover url('../Assets/expositores/FALTA');
+    background: center/cover url('../Assets/expositores/logo-sepro-patria-amada-200x100-1.png.webp');
     width:20%;
     height:140px;
 }
@@ -658,6 +682,22 @@ text-align: center;
 /*EXPOSITORES CREDENCIAMENTO LINHA 1*/
 .conteudo-expositores-Credenciamento{
     background: center/cover url('../Assets/expositores/bom-evento-200x100-1.jpeg.webp');
+    width:20%;
+    height:140px;
+}
+/*EXPOSITORES CREDENCIAMENTO MONTADORA*/
+.conteudo-expositores-montadora-1-2{
+    background: center/cover url('../Assets/expositores/logo_proportio_200x100px.jpg.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-hotel-parceiro-l2{
+    background: center/cover url('../Assets/expositores/NOVOHOTEL.webp');
+    width:20%;
+    height:140px;
+}
+.conteudo-expositores-promotora-l2{
+    background: center/cover url('../Assets/expositores/Logo-iX-Feiras-200x100px-1.jpeg.webp');
     width:20%;
     height:140px;
 }
@@ -950,9 +990,15 @@ text-align: center;
     font-family: "Roboto", Sans-serif;
     line-height: 4.0;
 }
+.conteiner-expositores h1{
+    font-weight: bolder;
+    padding: 10px;
+}
 .conteiner-interno {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 900px){
@@ -971,6 +1017,19 @@ text-align: center;
         visibility: hidden;
         list-style: none;
     }
+    #navbar-container i{
+        color: #eee;
+        visibility: visible !important;
+        margin-left: 60%;
+    }
+    #navbar-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+#navbar-container i:hover{
+    color: #FFAD00;
+    cursor: pointer;
 }
 @media screen and (max-width: 720px) {
     #cards{
@@ -994,7 +1053,13 @@ text-align: center;
         display: flex;
         align-items: center;
     }
+   
   }
+
+#navbar-container i{
+    color: #eee;
+    visibility: hidden;
+    }
   @media screen and (max-width: 1020px){
     .conteiner-info {
         width:100%;
@@ -1055,6 +1120,10 @@ text-align: center;
         margin: 40px;
         letter-spacing: 2px;
         text-align: center;
+    }
+    .expositores{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
