@@ -31,3 +31,28 @@ const draggStop = () => {
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 carousel.addEventListener("mouseup", draggStop);
+
+function openNav(){
+    /*alert('ABRIU')*/
+    document.getElementById('myNav').style.width = '100%';
+}
+
+function closeNav(){
+    /*alert('FECHOU')*/
+    document.getElementById('myNav').style.width = '0%';
+}
+
+function openAlert(){
+    alert('Seu formulario foi enviado!')
+}
+
+function menuShow(){
+    let menuMobile = document.querySelector('.mobile-menu');
+    if(menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "assets/img/menu_open.svg";
+    }else{
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "assets/img/menu_close.svg";
+    }
+}

@@ -8,39 +8,155 @@
     <meta name="robots" content="index">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="Assets/diversos/logo-menor.png">
-    <link rel="stylesheet" type="text/css" href="stype.css">
+    
+    <link rel="icon" href="Assets/diversos/ERPsummit-Logo-CoresSemFundo.jpg">
+
+    <!-- <link rel="stylesheet" type="text/css" href="stype.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="dist/css/principal.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--mobile icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <!--<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
     <!--<link rel="stylesheet" type="text/css" href="mobile.css">-->
     <title>ERP Summit - O Maior Evento da America Latina sobre Gestão e Software</title>
 </head>
+
 <body>
     <!--NAVEGAÇÃO-->
     <nav id="navbar">
-      <div id="navbar-container">
-        <img id="logo" src="../Assets/diversos/logo-escuro.png">
-        <i class="fi fi-br-menu-burger"></i>
+      <!--NAVIGATION WEB-->
+      <div class="navbar-container">
+        <img loading="lazy" id="logo" src="Assets/diversos/captura.png" alt="Logo erp summit" style="aspect-ratio: auto;">
 
-        <ul id="navbar-item">
-          <a href="#"><li id="inicio">Home</li></a>
-          <a href="#"><li id="expositores">Expositores</li></a>
+        <i onclick="openNav()" class="fi fi-br-menu-burger"></i>
+        
+        <ul class="navbar-item">
+          <a href="#FR"><li id="inicio">Home</li></a>
+          <a href="#EX"><li id="expositores">Expositores</li></a>
           <a href="https://pages.portalerp.com/erp-summit-2024-credenciamento"><li id="maisInformacoes">Mais informações</li></a>
           <a href="https://erpsummit24.expofp.com"><li id="Planta">Planta</li></a>
           <a href="https://pages.portalerp.com/erp-summit-2024-mediakit"><li id="SejaUmExpositor">Seja um expositor</li></a>
         </ul>
       </div>
+
+      <div id="myNav" class="overlay">
+        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a class="nav-link" href="#FR" onclick="closeNav()">Home</a>
+            <a class="nav-link" href="#EX" onclick="closeNav()">Expositores</a>
+            <a class="nav-link" href="https://pages.portalerp.com/erp-summit-2024-credenciamento">Mais informações</a>
+            <a class="nav-link" href="https://erpsummit24.expofp.com">Planta</a>
+            <a class="nav-link" href="https://pages.portalerp.com/erp-summit-2024-mediakit">Seja um expositor</a>
+        </div> 
+        <!-- <button class="nav-button" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button> -->
+
+      </div>
+      <!--NAVIGATION MOBILE
+
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a class="nav-link" href="inicio">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="expositores">Expositores</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://pages.portalerp.com/erp-summit-2024-credenciamento">Mais informações</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://erpsummit24.expofp.com">Planta</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://pages.portalerp.com/erp-summit-2024-mediakit">Seja um expositor</a></li>
+        </ul>
+      </div>-->
     </nav>
     <!--FORMULARIO-->
-    <section class="formulario">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S2PTt6WWhm4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section id="FR" class="formulario">
+      <video class="video-formulario" width="100%" height="auto" controls="0" autoplay muted loop alt="video de entrada">
+        <source src="Assets/video/erp-video.mp4" type="video/mp4">
+      </video>
+      <div class="formulario-interno">
+        <div class="caixa-texto-form">
+            <h1>
+                <span>
+                    SP – Brasil | Expo Center Norte
+                    <br>
+                    18 e 19 de março de 2024
+                    <br>
+                    Pavilhão Azul 
+                </span>
+            </h1>
+        </div>
+        <div class="text-descript">
+            <p>
+                <span style="color: #ff9900;">
+                    <strong>Participe do maior evento sobre Software e Gestão da América Latina</strong>
+                </span>
+            </p>
+        </div>
+        <form class="formulario-entrada" action="page.html" method="post">
+            <label for="label-name" class="form-campo-label">Nome</label>
+              <input id="label-name" type="text">
+            <label for="label-email" class="form-campo-label">Email</label>
+              <input id="label-email" type="email">
+            <label for="label-whatsapp" class="form-campo-label">Whatsapp</label>
+              <input id="label-whatsapp" type="tel">
+            <label for="label-empresa" class="form-campo-label">Empresa</label>
+              <input id="label-empresa" type="text">
+            <label for="label-setor-empresa" class="form-campo-label">Qual o setor da sua empresa?</label>
+              <select id="label-setor-empresa">
+                  <option value="Selecionar">Selecionar</option>
+                  <option value="Varejo">Varejo</option>
+                  <option value="Serviço">Serviço</option>
+                  <option value="Agronegócio">Agronegócio</option>
+                  <option value="Bancário">Bancário</option>
+                  <option value="Construção Civil">Construção Civil</option>
+                  <option value="Distribuição e Logística">Distribuição e Logística</option>
+                  <option value="Educacional">Educacional</option>
+                  <option value="Governo">Governo</option>
+                  <option value="Jurídico">Jurídico</option>
+                  <option value="Saúde">Saúde</option>
+                  <option value="Shopping Center">Shopping Center</option>
+                  <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+                  <option value="Turismo">Turismo</option>
+                  <option value="Manufatura">Manufatura</option>
+                  <option value="Transporte">Transporte</option>
+                  <option value="Energia">Energia</option>
+                  <option value="Outros">Outros</option>
+              </select>
+            <label for="label-cargo" class="form-campo-label">Cargo atual</label>
+              <select id="label-cargo">
+                  <option value="Selecionar">Selecionar</option>
+                  <option value="CEO/Presidente">CEO/Presidente</option>
+                  <option value="Sócio-Proprietário">Sócio-Proprietário</option>
+                  <option value="Diretor">Diretor</option>
+                  <option value="Gerente">Gerente</option>
+                  <option value="Consultor">Consultor</option>
+                  <option value="Coordenador/Supervisor">Coordenador/Supervisor</option>
+                  <option value="Analista">Analista</option>
+                  <option value="Assistente">Assistente</option>
+                  <option value="Pesquisador/Acadêmico">Pesquisador/Acadêmico</option>
+                  <option value="Outro">Outro</option>
+              </select>
+            <label for="label-calculadora" class="form-campo-label">4+10 =?</label>
+              <input id="label-calculadora" type="number">
+
+            <div class="subgrupo">
+                <span>
+                  <input id="subgrupo-checkbox" type="checkbox">
+                    <label for="subgrupo-checkbox">Solicitamos o seu Consentimento para Proteção e Tratamento de Dados conforme LGPD (Lei Geral de Proteção de Dados) vigente.</label>
+                </span>
+            </div>
+            <button onclick="openAlert()" class="botao-form" value="Enviar" href="javascript:void(0)">Enviar</button>
+        </form>
+      </div>
     </section>
     <!--CARD BOX 1-->
     <section id="card-box">
-        <section id="cards">
-          <section class="carde primeiro">
+      <section id="cards">
+          <section class="carde">
               <div class="icon">
                 <i class="fi fi-br-users"></i>
               </div>
@@ -48,7 +164,7 @@
               <h3>Ambiente de Negócios</h3>
               <span>Crie laços, estreite relacionamentos, fortaleça seu networking e desenvolva novas oportunidades de parceria e negócios.</span>
           </section>
-          <section class="carde segundo">
+          <section class="carde">
               <div class="icon">
                 <i class="fi fi-br-checkbox"></i>
               </div>
@@ -56,7 +172,7 @@
               <h3>Inovações Tecnológicas</h3>
               <span>Conheça a vanguarda do segmento e o que há de mais avançado na indústria.</span>
           </section>
-          <section class="carde terceiro">
+          <section class="carde">
               <div class="icon">
                 <i class="fi fi-br-download"></i>
               </div>
@@ -68,8 +184,7 @@
     </section>
 
     <div class="beneficios-do-evento">
-      <a href="https://pages.portalerp.com/erp-summit-2024-credenciamento"><button class="">Mais informação</button></a>
-
+      <a class="btn background-button" href="https://pages.portalerp.com/erp-summit-2024-credenciamento" role="button">Mais informação</a>
     </div>
     <!--CONTEUDO DO EVENTO-->
     <section class="conteiner-info">
@@ -79,16 +194,19 @@
             <span>Veja como foi o evento, reações e depoimentos dos expositores, participantes e apoiadores.</span>
         </section>
         <section class="conteiner-video-ifreme">
-            <iframe src="https://www.youtube.com/embed/O0A-KyIBaZg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!--<video src="Assets/erp-video.mp4" type="video/mp4"></video>-->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/S2PTt6WWhm4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
         </section>
     </section>
 
     <div class="beneficios-do-evento">
-        <a href="https://pages.portalerp.com/erp-summit-2024-credenciamento"><button>Mais informação</button></a>
+      <a class="btn background-button" href="https://pages.portalerp.com/erp-summit-2024-credenciamento" role="button">Mais informação</a>
+
+      <!-- <button  href="https://pages.portalerp.com/erp-summit-2024-credenciamento">Mais informação</button> -->
         <h1>BENEFÍCIOS DO <strong style="color: orange;">EVENTO</strong></h1>
     </div>
     <!--MAPA DO EVENTO-->
-    <section class="conteiner-info" style="background-image: url(../Assets/diversos/Capa-I-1-scaled.jpg);">
+    <section class="conteiner-info">
         <section class="conteiner-escrita-1">
             <div class="conteiner-titulo">
                 <h1><strong style="color: orange;">Frente a frente com os melhores!</strong></h1>
@@ -101,7 +219,7 @@
             <div class="foto-evento"></div>
         </section>
     </section>
-    <section class="conteiner-info" style="background-image: url(../Assets/diversos/Capa-I-1-scaled.jpg);">
+    <section class="conteiner-info">
         <section class="conteiner-escrita-1">
             <div class="conteiner-titulo">
                 <h1><strong style="color: orange;">Na linha de frente do mundo empresarial</strong></h1>
@@ -114,7 +232,7 @@
             <div class="foto-evento-2"></div>
         </section>
     </section>
-    <section class="conteiner-info" style="background-image: url(../Assets/diversos/Capa-I-1-scaled.jpg);">
+    <section class="conteiner-info">
         <section class="conteiner-escrita-1">
             <div class="conteiner-titulo">
                 <h1><strong style="color: orange;">Praça de alimentação no local de evento</strong></h1>
@@ -129,14 +247,15 @@
     </section>
 
     <div class="beneficios-do-evento">
-        <a href="https://pages.portalerp.com/erp-summit-2024-credenciamento"><button>Mais informação</button></a>
+      <a class="btn background-button" href="https://pages.portalerp.com/erp-summit-2024-credenciamento" role="button">Mais informação</a>
+
         <h1>QUEM PODE SE <strong style="color: orange;">BENEFICIAR COM AS PALESTRAS</strong></h1>
     </div>
     <!--CARD BOX 2-->
     <section class="card-box-1">
         <section class="baners-1">
             <div class="conteiner-icon-1">
-                <h3>C-LEVELS</h3>
+                <h2>C-LEVELS</h2>
             </div>
             <div class="conteiner-texto-maior-1">
                 <span>Conheça soluções com potencial de mudar o mercado e as histórias de quem colhe os frutos da inovação.</span>
@@ -144,7 +263,7 @@
         </section>
         <section class="baners-1">
             <div class="conteiner-icon-1">
-                <h3>SÓCIOS-DIRETORES</h3>
+                <h2>SÓCIOS-DIRETORES</h2>
             </div>
             <div class="conteiner-texto-maior-1">
                 <span>Encontre as soluções e os talentos que podem fazer a sua empresa ganhar anos à frente em vantagem competitiva.</span>
@@ -152,7 +271,7 @@
         </section>
         <section class="baners-1">
             <div class="conteiner-icon-1">
-                <h3>IT MANAGERS</h3>
+                <h2>IT MANAGERS</h2>
             </div>
             <div class="conteiner-texto-maior-1">
                 <span>Aprenda direto da fonte, compartilhe as inovações com seu time e aumente seu valor no mercado.</span>
@@ -204,370 +323,492 @@
     </section>
 
     <div class="beneficios-do-evento">
-      <a href="https://pages.portalerp.com/erp-summit-2024-credenciamento"><button>Mais informação</button></a>
+      <a class="btn background-button" href="https://pages.portalerp.com/erp-summit-2024-credenciamento" role="button">Mais informação</a>
         <h1><strong style="color: orange;">Palestrantes</strong> Confirmados</h1>
     </div>
     <!--PALESTRANTES LINKEDIN-->
     <section id="linkedin"> 
-    <section id="card-linkedin">
+      <section id="card-linkedin">
+          <div class="card">
+              <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/marcelo-600x600-1.jpeg.png" alt="Imagem do Card">
+              <h3>MARCELO SINHORINI</h3>
+              <p>Diretor do Grupo Portal ERP</p>
+              <a href="https://www.linkedin.com/in/marcelosinhorini/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          </div>
+          <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/luciano-itamar.jpeg.png" alt="Imagem do Card">
+            <h3>LUCIANO ITAMAR</h3>
+            <p>TPublisher e co-founder do Grupo Portal ERP</p>
+            <a href="https://www.linkedin.com/in/luciano-itamar-03035a2/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a> 
+          </div>
+          <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/ClaudioNasajon-29-03-2023.png.png" alt="Imagem do Card">
+            <h3>CLAUDIO NASAJON</h3>
+            <p>CEO da Nasajon Sistemas</p>
+            <a href="https://www.linkedin.com/in/claudionasajon/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a> 
+            
+          </div>
+          <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/03_palestrante_luis_felgueiras.jpg.png" alt="Imagem do Card">
+            <h3>LUIS FELGUEIRAS</h3>
+            <p>Diretor de Inteligência de Mercado e Inovação MXM Sistemas</p>
+            <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+          </div>
+      </section>
+      <section id="card-linkedin">
         <div class="card">
-            <img src="../Assets/palestrantes/marcelo-600x600-1.jpeg.webp" alt="Imagem do Card">
-            <h3>MARCELO SINHORINI</h3>
-            <p>Diretor do Grupo Portal ERP</p>
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Marcondes-1.jpg.png" alt="Imagem do Card">
+            <h3>MARCONDES FARIA</h3>
+            <p>Diretor de Marketing e Produto da Microsoft</p>
+            <a href="https://www.linkedin.com/in/luis-felipe-felgueiras-a23334a4/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
         </div>
         <div class="card">
-          <img src="../Assets/palestrantes/luciano-itamar.jpeg.webp" alt="Imagem do Card">
-          <h3>LUCIANO ITAMAR</h3>
-          <p>TPublisher e co-founder do Grupo Portal ERP</p>
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/bruno-senior-1.jpeg.png" alt="Imagem do Card">
+          <h3>BRUNO SCARAVELLI</h3>
+          <p>Head Corporativo de Marketing da Senior Sistemas</p>
+          <a href="https://www.linkedin.com/in/brunoscaravelli/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
         </div>
         <div class="card">
-          <img src="../Assets/palestrantes/ClaudioNasajon-29-03-2023.png.webp" alt="Imagem do Card">
-          <h3>CLAUDIO NASAJON</h3>
-          <p>CEO da Nasajon Sistemas</p>
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Hugo-Dias-1.jpg.png" alt="Imagem do Card">
+          <h3>HUGO DIAS</h3>
+          <p>VP de Marketing e Vendas da Alterdata</p>
+          <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
         </div>
         <div class="card">
-          <img src="../Assets/palestrantes/03_palestrante_luis_felgueiras.jpg.webp" alt="Imagem do Card">
-          <h3>LUIS FELGUEIRAS</h3>
-          <p>Diretor de Inteligência de Mercado e Inovação MXM Sistemas</p>
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Raoni-Resende-1-1.jpg.png" alt="Imagem do Card">
+          <h3>RAONI RESENDE</h3>
+          <p>CFO e Co-founder da DTI</p>
+          
+          <a href="https://linkedin.com/in/raoni/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
         </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Marcondes-1.jpg.webp" alt="Imagem do Card">
-          <h3>MARCONDES FARIA</h3>
-          <p>Diretor de Marketing e Produto da Microsoft</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/bruno-senior-1.jpeg.webp" alt="Imagem do Card">
-        <h3>BRUNO SCARAVELLI</h3>
-        <p>Head Corporativo de Marketing da Senior Sistemas</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Hugo-Dias-1.jpg.webp" alt="Imagem do Card">
-        <h3>HUGO DIAS</h3>
-        <p>VP de Marketing e Vendas da Alterdata</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Raoni-Resende-1-1.jpg.webp" alt="Imagem do Card">
-        <h3>RAONI RESENDE</h3>
-        <p>CFO e Co-founder da DTI</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Foto-600x600px.jpeg.webp" alt="Imagem do Card">
-          <h3>PETERSON F. DOS SANTOS</h3>
-          <p>CEO da Trio Tecnologia</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Thiago-Queiros-Vockan.jpg.webp" alt="Imagem do Card">
-        <h3>THIAGO QUEIROS</h3>
-        <p>Gestor das áreas de Projetos, Consultoria e Experiência na Vockan</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/GustavoM-1.jpg.webp" alt="Imagem do Card">
-        <h3>GUSTAVO MOUSSALLI</h3>
-        <p>Vice Presidente Oracle NetSuite</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/1637804028869.jpeg.webp" alt="Imagem do Card">
-        <h3>ROBERTO ARRUDA</h3>
-        <p>Chief Revenue Officer na Sky.One Solutions</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/ernesto.jpeg.webp" alt="Imagem do Card">
-          <h3>ERNESTO HABERKORN</h3>
-          <p>Sócio Diretor da ERPFLEX</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/otavio.jpeg.webp" alt="Imagem do Card">
-        <h3>OTÁVIO LUCAS PENHA</h3>
-        <p>Fundador e CEO da Ottech</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Leandro-1.jpeg.webp" alt="Imagem do Card">
-        <h3>LEANDRO SILVA</h3>
-        <p>GEO Leader Brazil na Centric Software</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/1619213190499.jpeg.webp" alt="Imagem do Card">
-        <h3>LAURO DE LAURO</h3>
-        <p>COO na Sky.One Solutions</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Amanda-2.jpeg.webp" alt="Imagem do Card">
-          <h3>AMANDA VIDMONTAS</h3>
-          <p>Senior Manager Sales Consulting na Oracle NetSuite</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Foto-Jaqueline-ERP-Summit.jpeg.webp" alt="Imagem do Card">
-        <h3>JAQUELINE VENCESLAU</h3>
-        <p>Senior Solution Consultant na Oracle NetSuite</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Vivian-Carvalho.jpg.webp" alt="Imagem do Card">
-        <h3>VIVIAN CARVALHO</h3>
-        <p>GEO Leader Brazil na Centric Software</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Yara.jpeg.webp" alt="Imagem do Card">
-        <h3>YARA SANTOS</h3>
-        <p>Pré-Vendas na Oracle NetSuite</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Simone-Pires.jpg.webp" alt="Imagem do Card">
-          <h3>SIMONE PIRES</h3>
-          <p>Senior Manager Direct Sales Oracle NetSuite</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/ROSEMEIRE2.png.webp" alt="Imagem do Card">
-        <h3>ROSEMEIRE FERNANDES</h3>
-        <p>Principal Sales Solution Consultant da NetSuite</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/01_palestrante_alexandre_sa.jpg.webp" alt="Imagem do Card">
-        <h3>ALEXANDRE SÁ</h3>
-        <p>Diretor Regional da Unidade São Paulo na MXM Sistemas</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/1639663313630.jpeg.webp" alt="Imagem do Card">
-        <h3>ROBSON DEL FIOL</h3>
-        <p>Head de Vendas e Marketing do Integra.Sky</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/FLAVIO.jpg.webp" alt="Imagem do Card">
-          <h3>FLÁVIO LUIS FACCIO</h3>
-          <p>Diretor Comercial Optidata</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/DARLAN.jpg.webp" alt="Imagem do Card">
-        <h3>DARLAN SEGALIN</h3>
-        <p>CEO da Optidata</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/FERNANDO.jpg.webp" alt="Imagem do Card">
-        <h3>FERNANDO BEVILAQUA</h3>
-        <p>Head de Desenvolvimento na Optidata</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/1639663313630.jpeg.webp" alt="Imagem do Card">
-        <h3>FERNANDO LUCHINI</h3>
-        <p>Diretor de Produtos e Soluções na Vockan</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/bruno-jarra.jpg.webp" alt="Imagem do Card">
-          <h3>BRUNO PARRA</h3>
-          <p>CRO da Checklist Fácil ( Grupo Softplan)</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Fernando-Paiva.jpg.webp" alt="Imagem do Card">
-        <h3>FERNANDO PAIVA</h3>
-        <p>Especialista Técnico na ManageEngine</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Palestrante-Sthefani.jpg.webp" alt="Imagem do Card">
-        <h3>STHÉFANI SILVA</h3>
-        <p>Especialista Técnica na ManageEngine</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Flavio-Calixto-Mitra-1.jpg.webp" alt="Imagem do Card">
-        <h3>FLÁVIO CALIXTO</h3>
-        <p>CEO do Mitra</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Dionice-de-Almeida.jpg.webp" alt="Imagem do Card">
-          <h3>DIONICE DE ALMEIDA</h3>
-          <p>CEO da NV Seguros Digitais</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Altamiro-760x570-1.png.webp" alt="Imagem do Card">
-        <h3>ALTAMIRO CASTELAN</h3>
-        <p>ALTAMIRO CASTELAN</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/patrick.jpg.webp" alt="Imagem do Card">
-        <h3>PATRICK NEGRI</h3>
-        <p>CTO na iugu</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/pablo.jpg.webp" alt="Imagem do Card">
-        <h3>PABLO WERNECK</h3>
-        <p>Diretor de Negócios na Skymail Soluções em nuvem</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Foto-Marcos-Barbosa.jpeg.webp" alt="Imagem do Card">
-          <h3>MARCOS BARBOSA</h3>
-          <p>Gerente de Marketing na SaveinCloud</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Altamiro-760x570-1.png.webp" alt="Imagem do Card">
-        <h3>ALTAMIRO CASTELAN</h3>
-        <p>ALTAMIRO CASTELAN</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/cristiano-luiz.jpg.webp" alt="Imagem do Card">
-        <h3>CRISTIANO LUIS DA SILVA</h3>
-        <p>Diretor de Marketing da Softplan ( Vertical Legaltech)</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/guilherme.jpg.webp" alt="Imagem do Card">
-        <h3>GUILHERME TOSSULINO</h3>
-        <p>Diretor de Estratégia e MeA da Softplan</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/renata.jpg.webp" alt="Imagem do Card">
-          <h3>RENATA CASTRO</h3>
-          <p>Parcerias Estratégicas  em Médicos Sem Fronteiras Brasil</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.webp" alt="Imagem do Card">
-        <h3>DJALMA FRANCO</h3>
-        <p>Sr Cloud Solution Architect na Microsoft</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Rodolfo-Belli-1536x1536.jpg.webp" alt="Imagem do Card">
-        <h3>RODOLFO BELLI</h3>
-        <p>Head de Produtos na Aarin Tech Fin</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Thiago-Zaninotti-1-1.jpg.webp" alt="Imagem do Card">
-        <h3>THIAGO ZANINOTTI</h3>
-        <p>CTO na Celcoin</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/thumbnail_Joseph.jpg.webp" alt="Imagem do Card">
-          <h3>JOSEPH SPIEGEL</h3>
-          <p>Diretor de Gestão e Moda na Alterdata</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/LEONARDO-CASTELO.jpeg.webp" alt="Imagem do Card">
-        <h3>LEONARDO CASTELO</h3>
-        <p>Rei do Franchising / EMBAIXADOR Alterdata Software</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Roberto-Grota-Alterdata.jpeg.webp" alt="Imagem do Card">
-        <h3>ROBERTO GROTA</h3>
-        <p>Gerente de Filial São Paulo / Alterdata</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Flavio_6.jpg.webp" alt="Imagem do Card">
-        <h3>LÁVIO CARNEIRO</h3>
-        <p>Gestor Nacional de Vendas Varejo e Food na Alterdata</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Jean-Paul-Vieira-Diretor-Executivo-de-Marketing-e-Produto.jpeg.webp" alt="Imagem do Card">
-          <h3>JEAN VIEIRA</h3>
-          <p>Diretor Executivo de Marketing e Produtos na Senior Sistemas</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Daniel-Braz-Head-da-X-Platform.jpg.webp" alt="Imagem do Card">
-        <h3>DANIEL BRAZ</h3>
-        <p>Head da X Platform na
-          Senior Sistemas</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Marlos-Cravo-Head-de-Produto-ERP-.jpeg.webp" alt="Imagem do Card">
-        <h3>MARLOS CRAVO</h3>
-        <p>Head of Product | ERP Industrial na
-          Senior Sistemas</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Thiago-Ferreira-Head-de-Produto-ERP.jpeg.webp" alt="Imagem do Card">
-        <h3>THIAGO FERREIRA</h3>
-        <p>Head de Produto ERP na Senior Sistemas</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Diego1.jpg.webp" alt="Imagem do Card">
-          <h3>JEAN VIEIRA</h3>
-          <p>Diretor Executivo de Marketing e Produtos na Senior Sistemas</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Leandro-1.jpeg.webp" alt="Imagem do Card">
-        <h3>LEANDRO NEVES</h3>
-        <p>CEO na Weni</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/paulo-leme.jpg.webp" alt="Imagem do Card">
-        <h3>PAULO LEME</h3>
-        <p>Executivo de Negócios B2B SaaS no Google</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/bmp-bancos.png.webp" alt="Imagem do Card">
-        <h3>CARLOS BENITEZ</h3>
-        <p>CEO da BMP</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Ticiana-Amorim.jpg.webp" alt="Imagem do Card">
-          <h3>TICIANA AMORIM</h3>
-          <p>CEO e Founder da Aarin Tech-fin</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Bruno-Rondani-Foto-1Mb.jpg.webp" alt="Imagem do Card">
-        <h3>BRUNO RONDANI</h3>
-        <p>CEO da 100 Open Startups</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/eric.jpeg.webp" alt="Imagem do Card">
-        <h3>ERIC SECCO MARCOS</h3>
-        <p>ISV Sales Manager na AWS</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/02_palestrante_joao_eduardo.jpeg.webp" alt="Imagem do Card">
-        <h3>JOÃO EDUARDO</h3>
-        <p>Vice-Presidente Comercial na MXM Sistemas</p>
-      </div>
-    </section>
-    <section id="card-linkedin">
-      <div class="card">
-          <img src="../Assets/palestrantes/Ivo.jpeg.webp" alt="Imagem do Card">
-          <h3>IVO ALESSANDRO</h3>
-          <p>Coordenador de T.I na Itograss</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Milton-Camargo-1.jpg.webp" alt="Imagem do Card">
-        <h3>MILTON CAMARGO</h3>
-        <p>Head of Banking as a Service na Celcoin</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Ruda-Galvao.png.webp" alt="Imagem do Card">
-        <h3>RUDÁ GALVÃO</h3>
-        <p>Co-Founder and Manager of Sales e Customer Experience at @Aarin Tech-Fin</p>
-      </div>
-      <div class="card">
-        <img src="../Assets/palestrantes/Caroline-Geraldo-1.png.webp" alt="Imagem do Card">
-        <h3>CAROLINE GERALDO</h3>
-        <p>Diretora de Produtos na Celcoin</p>
-      </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Foto-600x600px.jpeg.png" alt="Imagem do Card">
+            <h3>PETERSON F. DOS SANTOS</h3>
+            <p>CEO da Trio Tecnologia</p>
+            <a href="https://www.linkedin.com/in/petersonfs/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Thiago-Queiros-Vockan.jpg.png" alt="Imagem do Card">
+          <h3>THIAGO QUEIROS</h3>
+          <p>Gestor das áreas de Projetos, Consultoria e Experiência na Vockan</p>
+          <a href="https://linkedin.com/in/thiagoqueiros/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/GustavoM-1.jpg.png" alt="Imagem do Card">
+          <h3>GUSTAVO MOUSSALLI</h3>
+          <p>Vice Presidente Oracle NetSuite</p>
+          <a href="https://www.linkedin.com/in/gustavo-moussalli-717160/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/1637804028869.jpeg.png" alt="Imagem do Card">
+          <h3>ROBERTO ARRUDA</h3>
+          <p>Chief Revenue Officer na Sky.One Solutions</p>
+          <a href="https://www.linkedin.com/in/arruda/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/ernesto.jpeg.png" alt="Imagem do Card">
+            <h3>ERNESTO HABERKORN</h3>
+            <p>Sócio Diretor da ERPFLEX</p>
+            <a href="https://www.linkedin.com/in/ernestohaberkorn/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/otavio.jpeg.png" alt="Imagem do Card">
+          <h3>OTÁVIO LUCAS PENHA</h3>
+          <p>Fundador e CEO da Ottech</p>
+          <a href="https://www.linkedin.com/in/otavio-lucas-sim%C3%B5es-penha-03590978/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Leandro-1.jpeg.png" alt="Imagem do Card">
+          <h3>LEANDRO SILVA</h3>
+          <p>GEO Leader Brazil na Centric Software</p>
+          
+          <a href="https://www.linkedin.com/in/leandro--silva/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/1619213190499.jpeg.png" alt="Imagem do Card">
+          <h3>LAURO DE LAURO</h3>
+          <p>COO na Sky.One Solutions</p>
+          <a href="https://www.linkedin.com/in/laurodelauro/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Amanda-2.jpeg.png" alt="Imagem do Card">
+            <h3>AMANDA VIDMONTAS</h3>
+            <p>Senior Manager Sales Consulting na Oracle NetSuite</p>
+            <a href="https://www.linkedin.com/in/amanda-vidmontas-4ab45835/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Foto-Jaqueline-ERP-Summit.jpeg.png" alt="Imagem do Card">
+          <h3>JAQUELINE VENCESLAU</h3>
+          <p>Senior Solution Consultant na Oracle NetSuite</p>
+          
+          <a href="https://www.linkedin.com/in/jaqueline-gomes-venceslau-570a1a2b/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Vivian-Carvalho.jpg.png" alt="Imagem do Card">
+          <h3>VIVIAN CARVALHO</h3>
+          <p>GEO Leader Brazil na Centric Software</p>
+          <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Yara.jpeg.png" alt="Imagem do Card">
+          <h3>YARA SANTOS</h3>
+          <p>Pré-Vendas na Oracle NetSuite</p>
+          
+          <a href="https://www.linkedin.com/in/yara-oliveira-santos-549102ba/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Simone-Pires.jpg.png" alt="Imagem do Card">
+            <h3>SIMONE PIRES</h3>
+            <p>Senior Manager Direct Sales Oracle NetSuite</p>
+            <a href="https://www.linkedin.com/in/simone-pires/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/ROSEMEIRE2.png.png" alt="Imagem do Card">
+          <h3>ROSEMEIRE FERNANDES</h3>
+          <p>Principal Sales Solution Consultant da NetSuite</p>
+          <a href="https://www.linkedin.com/in/rosemeire-consoni-belon-fernandes-b08438a0/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/01_palestrante_alexandre_sa.jpg.png" alt="Imagem do Card">
+          <h3>ALEXANDRE SÁ</h3>
+          <p>Diretor Regional da Unidade São Paulo na MXM Sistemas</p>
+          <a href="https://www.linkedin.com/in/alexandre-sa-54b6679/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/1639663313630.jpeg.png" alt="Imagem do Card">
+          <h3>ROBSON DEL FIOL</h3>
+          <p>Head de Vendas e Marketing do Integra.Sky</p>
+          <a href="https://www.linkedin.com/in/robsondelfiol/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/FLAVIO.jpg.png" alt="Imagem do Card">
+            <h3>FLÁVIO LUIS FACCIO</h3>
+            <p>Diretor Comercial Optidata</p>
+            <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/DARLAN.jpg.png" alt="Imagem do Card">
+          <h3>DARLAN SEGALIN</h3>
+          <p>CEO da Optidata</p>
+          
+          <a href="https://www.linkedin.com/in/darlan-segalin-3426ab11/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/FERNANDO.jpg.png" alt="Imagem do Card">
+          <h3>FERNANDO BEVILAQUA</h3>
+          <a href=""> <img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          <p>Head de Desenvolvimento na Optidata</p>
+         
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/1639663313630.jpeg.png" alt="Imagem do Card">
+          <h3>FERNANDO LUCHINI</h3>
+          <p>Diretor de Produtos e Soluções na Vockan</p>
+          <a href="https://www.linkedin.com/in/ederson-brito-alexandre-806a1138/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/bruno-jarra.jpg.png" alt="Imagem do Card">
+            <h3>BRUNO PARRA</h3>
+            <p>CRO da Checklist Fácil ( Grupo Softplan)</p>
+            <a href="https://www.linkedin.com/in/brunojparra/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Fernando-Paiva.jpg.png" alt="Imagem do Card">
+          <h3>FERNANDO PAIVA</h3>
+          <p>Especialista Técnico na ManageEngine</p>
+          <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Palestrante-Sthefani.jpg.png" alt="Imagem do Card">
+          <h3>STHÉFANI SILVA</h3>
+          <p>Especialista Técnica na ManageEngine</p>
+          <a href="https://www.linkedin.com/in/sthefani-silva/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Flavio-Calixto-Mitra-1.jpg.png" alt="Imagem do Card">
+          <h3>FLÁVIO CALIXTO</h3>
+          <p>CEO do Mitra</p>
+          
+          <a href="https://www.linkedin.com/in/flavio-calixto/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Dionice-de-Almeida.jpg.png" alt="Imagem do Card">
+            <h3>DIONICE DE ALMEIDA</h3>
+            <p>CEO da NV Seguros Digitais</p>
+            <a href="https://www.linkedin.com/in/dionice-de-almeida-7b717048/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Altamiro-760x570-1.png.png" alt="Imagem do Card">
+          <h3>ALTAMIRO CASTELAN</h3>
+          <p>ALTAMIRO CASTELAN</p>
+          <a href="https://www.linkedin.com/in/altamiro-castelan-1a62101/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/patrick.jpg.png" alt="Imagem do Card">
+          <h3>PATRICK NEGRI</h3>
+          <p>CTO na iugu</p>
+          <a href="https://www.linkedin.com/in/patricknegri/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/pablo.jpg.png" alt="Imagem do Card">
+          <h3>PABLO WERNECK</h3>
+          <p>Diretor de Negócios na Skymail Soluções em nuvem</p>
+          <a href="https://www.linkedin.com/in/pablo-werneck-4a4a4811/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Foto-Marcos-Barbosa.jpeg.png" alt="Imagem do Card">
+            <h3>MARCOS BARBOSA</h3>
+            <p>Gerente de Marketing na SaveinCloud</p>
+            <a href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-barbosa-40b30697/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Altamiro-760x570-1.png.png" alt="Imagem do Card">
+          <h3>ALTAMIRO CASTELAN</h3>
+          <p>ALTAMIRO CASTELAN</p>
+          <a href="https://www.linkedin.com/in/altamiro-castelan-1a62101/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/cristiano-luiz.jpg.png" alt="Imagem do Card">
+          <h3>CRISTIANO LUIS DA SILVA</h3>
+          <p>Diretor de Marketing da Softplan ( Vertical Legaltech)</p>
+          <a href="https://www.linkedin.com/in/cristiano-luis-da-silva-952a7811/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/guilherme.jpg.png" alt="Imagem do Card">
+          <h3>GUILHERME TOSSULINO</h3>
+          <p>Diretor de Estratégia e MeA da Softplan</p>
+          <a href="https://www.linkedin.com/in/tossulino/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/renata.jpg.png" alt="Imagem do Card">
+            <h3>RENATA CASTRO</h3>
+            <p>Parcerias Estratégicas  em Médicos Sem Fronteiras Brasil</p>
+            <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.png" alt="Imagem do Card">
+          <h3>DJALMA FRANCO</h3>
+          <p>Sr Cloud Solution Architect na Microsoft</p>
+          <a href="https://www.linkedin.com/in/djalmafranco/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Rodolfo-Belli-1536x1536.jpg.png" alt="Imagem do Card">
+          <h3>RODOLFO BELLI</h3>
+          <p>Head de Produtos na Aarin Tech Fin</p>
+          <a href="https://www.linkedin.com/in/cspo-rodolfo/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Thiago-Zaninotti-1-1.jpg.png" alt="Imagem do Card">
+          <h3>THIAGO ZANINOTTI</h3>
+          <p>CTO na Celcoin</p>
+          <a href="https://www.linkedin.com/in/zaninotti/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/thumbnail_Joseph.jpg.png" alt="Imagem do Card">
+            <h3>JOSEPH SPIEGEL</h3>
+            <p>Diretor de Gestão e Moda na Alterdata</p>
+            <a href="https://www.linkedin.com/in/joseph-spiegel-340b0a26/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/LEONARDO-CASTELO.jpeg.png" alt="Imagem do Card">
+          <h3>LEONARDO CASTELO</h3>
+          <p>Rei do Franchising / EMBAIXADOR Alterdata Software</p>
+          <a href="https://www.linkedin.com/in/leonardocastelo/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Roberto-Grota-Alterdata.jpeg.png" alt="Imagem do Card">
+          <h3>ROBERTO GROTA</h3>
+          <p>Gerente de Filial São Paulo / Alterdata</p>
+          <a href="https://www.linkedin.com/in/roberto-grota-635a53193/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Flavio_6.jpg.png" alt="Imagem do Card">
+          <h3>LÁVIO CARNEIRO</h3>
+          <p>Gestor Nacional de Vendas Varejo e Food na Alterdata</p>
+          <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Jean-Paul-Vieira-Diretor-Executivo-de-Marketing-e-Produto.jpeg.png" alt="Imagem do Card">
+            <h3>JEAN VIEIRA</h3>
+            <p>Diretor Executivo de Marketing e Produtos na Senior Sistemas</p>
+            <a href="https://www.linkedin.com/in/jeanpaulvieira/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Daniel-Braz-Head-da-X-Platform.jpg.png" alt="Imagem do Card">
+          <h3>DANIEL BRAZ</h3>
+          <p>Head da X Platform na
+            Senior Sistemas</p>
+            <a href="https://www.linkedin.com/in/dsbraz/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Marlos-Cravo-Head-de-Produto-ERP-.jpeg.png" alt="Imagem do Card">
+          <h3>MARLOS CRAVO</h3>
+          <p>Head of Product | ERP Industrial na
+            Senior Sistemas</p>
+            <a href="https://www.linkedin.com/in/marloscarreocravo/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Thiago-Ferreira-Head-de-Produto-ERP.jpeg.png" alt="Imagem do Card">
+          <h3>THIAGO FERREIRA</h3>
+          <p>Head de Produto ERP na Senior Sistemas</p>
+          <a href="https://www.linkedin.com/in/thiago-alves-ferreira/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Diego1.jpg.png" alt="Imagem do Card">
+            <h3>JEAN VIEIRA</h3>
+            <p>Diretor Executivo de Marketing e Produtos na Senior Sistemas</p>
+            <a href="https://www.linkedin.com/in/jeanpaulvieira/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+            
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Leandro-1.jpeg.png" alt="Imagem do Card">
+          <h3>LEANDRO NEVES</h3>
+          <p>CEO na Weni</p>
+          <a href="https://www.linkedin.com/in/leandrorfneves/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/paulo-leme.jpg.png" alt="Imagem do Card">
+          <h3>PAULO LEME</h3>
+          <p>Executivo de Negócios B2B SaaS no Google</p>
+          <a href=""><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/bmp-bancos.png.png" alt="Imagem do Card">
+          <h3>CARLOS BENITEZ</h3>
+          <p>CEO da BMP</p>
+          <a href="https://www.linkedin.com/in/credicarro/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Ticiana-Amorim.jpg.png" alt="Imagem do Card">
+            <h3>TICIANA AMORIM</h3>
+            <p>CEO e Founder da Aarin Tech-fin</p>
+            <a href="https://www.linkedin.com/in/ticianaamorim/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Bruno-Rondani-Foto-1Mb.jpg.png" alt="Imagem do Card">
+          <h3>BRUNO RONDANI</h3>
+          <p>CEO da 100 Open Startups</p>
+          <a href="https://www.linkedin.com/in/brunorondani/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+          
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/eric.jpeg.png" alt="Imagem do Card">
+          <h3>ERIC SECCO MARCOS</h3>
+          <p>ISV Sales Manager na AWS</p>
+          <a href="https://www.linkedin.com/in/ericmarcosbr/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/02_palestrante_joao_eduardo.jpeg.png" alt="Imagem do Card">
+          <h3>JOÃO EDUARDO</h3>
+          <p>Vice-Presidente Comercial na MXM Sistemas</p>
+          <a href="https://www.linkedin.com/in/joao-eduardo-silva-neto-22202225/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+      </section>
+      <section id="card-linkedin">
+        <div class="card">
+            <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Ivo.jpeg.png" alt="Imagem do Card">
+            <h3>IVO ALESSANDRO</h3>
+            <p>Coordenador de T.I na Itograss</p>
+            <a href="https://www.linkedin.com/in/iazaqueu/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Milton-Camargo-1.jpg.png" alt="Imagem do Card">
+          <h3>MILTON CAMARGO</h3>
+          <p>Head of Banking as a Service na Celcoin</p>
+          <a href="https://www.linkedin.com/in/milton-camargo-8ba66145/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Ruda-Galvao.png.png" alt="Imagem do Card">
+          <h3>RUDÁ GALVÃO</h3>
+          <p>Co-Founder and Manager of Sales e Customer Experience at @Aarin Tech-Fin</p>
+          <a href="https://www.linkedin.com/in/rudagalvao/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+        <div class="card">
+          <img class="imagen-palestrantes" loading="lazy" width="100%" height="250px" src="../Assets/palestrantes/Caroline-Geraldo-1.png.png" alt="Imagem do Card">
+          <h3>CAROLINE GERALDO</h3>
+          <p>Diretora de Produtos na Celcoin</p>
+          <a href="https://www.linkedin.com/in/carolinegeraldo/"><img class="icon-linkedin" loading="lazy" src="../Assets/icon/icons8-linkedin-48.png" alt="logo linkedin"></a>
+        </div>
+      </section>
     </section>
 
-    </section>
+    <section>
         <div class="bootstrap">
             <h1>Agenda | 25 de abril</h1>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Palco Gestão</button>
                 </li>
@@ -614,7 +855,7 @@
                                             11h30
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/thumbnail_Joseph.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/thumbnail_Joseph.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Os 5 maiores desafios da Transformação Digital", com Marcelo Sinhorini | Diretor do Grupo Portal ERP</span>
@@ -632,7 +873,7 @@
                                             11h50
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/1637804028869.jpeg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/1637804028869.jpeg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Negócios em momento de Disrupção - Eficiência na Gestão", com Roberto Arruda | Chief Revenue Officer na Sky.One Solutions</span>
@@ -650,7 +891,7 @@
                                             12h10
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/Palestrante-Sthefani.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/Palestrante-Sthefani.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Inteligência artificial na gestão diária de TI", com Sthéfani Silva | Especialista Técnica na ManageEngine</span>
@@ -668,7 +909,7 @@
                                             12h30
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/renata.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/renata.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Tecnologias que salvam vidas", com Renata Castro| Parcerias Estratégicas  em Médicos Sem Fronteiras Brasil </span>
@@ -686,7 +927,7 @@
                                             12h50h às 14h
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Almoço"</span>
@@ -704,7 +945,7 @@
                                             14h30
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Microsoft e o Futuro dos Softwares de Gestão", com Djalma Franco | Sr Cloud Solution Architect na Microsoft</span>
@@ -722,7 +963,7 @@
                                             14h50
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/1639663313630.jpeg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/1639663313630.jpeg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Respondendo rapidamente às disrupturas por meio da inovação", com Fernando Luchini | Diretor de Produtos e Soluções na Vockan</span>
@@ -740,7 +981,7 @@
                                             15h10
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/ClaudioNasajon-29-03-2023.png.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/ClaudioNasajon-29-03-2023.png.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"ROI em ERP - como maximizar o retorno sobre investimento em automação", com Claudio Nasajon | Fundador da Nasajon</span>
@@ -758,7 +999,7 @@
                                             15h30
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/Rodolfo-Belli-1536x1536.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/Rodolfo-Belli-1536x1536.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Gestão de times de tecnologia de alta performance", com Rodolfo Belli | Head de produto na Aarin Tech-fin</span>
@@ -776,7 +1017,7 @@
                                             15h50
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/Thiago-Zaninotti-1-1.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/Thiago-Zaninotti-1-1.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Banking is now your ERP", com Thiago Zaninotti | CTO da Celcoin</span>
@@ -794,7 +1035,7 @@
                                             16h10
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/s8chAyk4-1536x1122.jpeg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/s8chAyk4-1536x1122.jpeg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>
@@ -813,7 +1054,7 @@
                                             16h30
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>
@@ -842,7 +1083,7 @@
                                         11h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Amanda-2.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Amanda-2.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"NetSuite Brasil : Conheça as novas funcionalidades para ajudar sua empresa a atender as exigências tributárias brasileiras", com Jaqueline Venceslau | Senior Solution Consultant na Oracle NetSuite e Amanda Vidmontas | Senior Manager Sales Consulting</span>
@@ -860,7 +1101,7 @@
                                         11h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/LEONARDO-CASTELO.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/LEONARDO-CASTELO.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -879,7 +1120,7 @@
                                         12h10 às 12h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/01_palestrante_alexandre_sa.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/01_palestrante_alexandre_sa.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -898,7 +1139,7 @@
                                         12h50 às 14h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Almoço"</span>
@@ -917,7 +1158,7 @@
                                         14h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Leandro-1.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Leandro-1.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -937,7 +1178,7 @@
                                         15h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Leandro-1.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Leandro-1.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"O que os líderes de negócios precisam saber sobre Techfin (Bancarização)", com Alejandro Iribarnegaray Villar | CTO no Banco Arbi</span>
@@ -955,7 +1196,7 @@
                                         15h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Daniel-Braz-Head-da-X-Platform.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Daniel-Braz-Head-da-X-Platform.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Plataformas em um mundo de Agregadores", com Daniel Braz | Head da X Platform na Senior Sistemas</span>
@@ -973,7 +1214,7 @@
                                         15h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/bruno-jarra.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/bruno-jarra.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Eficiência operacional na prática: conheça casos de sucesso de empresas que transformaram digitalmente seus processos e elevaram sua produtividade" , com Bruno Parra | CRO da Checklist Fácil (Grupo Softplan)</span>
@@ -991,7 +1232,7 @@
                                         16h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/DARLAN.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/DARLAN.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1010,7 +1251,7 @@
                                         16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1040,7 +1281,7 @@
                                         12h50 às 14h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Almoço"</span>
@@ -1058,7 +1299,7 @@
                                         14h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/LEONARDO-CASTELO.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/LEONARDO-CASTELO.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1077,7 +1318,7 @@
                                         14h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/03_palestrante_luis_felgueiras.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/03_palestrante_luis_felgueiras.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Construindo equipes de alta performance: estratégias de gestão para líderes de empresas digitais", com Luis Felgueiras | Diretor de Inteligência de Mercado e Inovação MXM Sistemas</span>
@@ -1096,7 +1337,7 @@
                                         15h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/renata.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/renata.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Explore o metaverso industrial com o HoloLens e o Dynamics Remote Assist", com Alessandro Lyra | TAM (Technical Account Manager) na SLMIT (parceiro Microsoft)</span>
@@ -1114,7 +1355,7 @@
                                         15h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/paulo-leme.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/paulo-leme.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Tomada de Decisão Digital no B2B e as Jornadas das ERPs", com Paulo Leme | Executivo de Negócios B2B SaaS no Google</span>
@@ -1132,7 +1373,7 @@
                                         15h50 às 16h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Fernando-Paiva.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Fernando-Paiva.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Mitigação de vulnerabilidades de Endpoints", com Fernando Paiva | Especialista Técnico na ManageEngine</span>
@@ -1151,7 +1392,7 @@
                                         16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Coffee Break"</span>
@@ -1181,7 +1422,7 @@
                                         12h50 às 14h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1200,7 +1441,7 @@
                                         14h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Leandro-1.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Leandro-1.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Cases de Sucesso em Digitalização de Processos", com Leandro Silva | GEO Leader Brazil na Centric Software</span>
@@ -1218,7 +1459,7 @@
                                         14h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Flavio-Calixto-Mitra-1.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Flavio-Calixto-Mitra-1.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Planilhas & ERPs: Mesmo com soluções incríveis, planilhas ainda controlam processos críticos. Qual é o próximo passo?", com Flávio Calixto | CEO do Mitra</span>
@@ -1236,7 +1477,7 @@
                                         15h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Dionice-de-Almeida.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Dionice-de-Almeida.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Ataque cyber x Imagem da empresa: como proteger-se", com Dionice de Almeida - CEO da NV Seguros Digitais.</span>
@@ -1254,7 +1495,7 @@
                                         15h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Thiago-Queiros-Vockan.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Thiago-Queiros-Vockan.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Por que Implementações de ERP falham?", com Thiago Queiros | Gestor das áreas de Projetos, Consultoria e Experiência na Vockan</span>
@@ -1273,7 +1514,7 @@
                                         15h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Leandro-1.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Leandro-1.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>" Palestra Reservada Microsoft"</span>
@@ -1291,7 +1532,7 @@
                                         16h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Marlos-Cravo-Head-de-Produto-ERP-.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Marlos-Cravo-Head-de-Produto-ERP-.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Indústria 4.0: Como aumentar sua produtividade e reduzir os custos operacionais na prática", com Marlos Cravo | Head de Produto ERP na Senior Sistemas</span>
@@ -1310,7 +1551,7 @@
                                         16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Coffee Break"</span>
@@ -1340,7 +1581,7 @@
                                         12h50 às 14h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1360,7 +1601,7 @@
                                         14h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/1637804028869.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/1637804028869.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Principais tendências e como trazer receita para o ERP com benefícios para empresa ", com José Roberto Kracochansky | Founder e CEO Jazz Tech</span>
@@ -1379,7 +1620,7 @@
                                         14h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Palestrante-Sthefani.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Palestrante-Sthefani.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"SAP LIA : O Poder de automatizar e transformar dados em resultados", com Flávio Kuroda | Head de Sales na ConexaoNF-e e Luciano Feletti Aponte | Software Engineer Expert na Arquivei</span>
@@ -1397,7 +1638,7 @@
                                         15h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/otavio.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/otavio.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"A Nova Era do ERP", com Otávio Lucas Simões Penha | Fundador e CEO da Ottech</span>
@@ -1415,7 +1656,7 @@
                                         15h30 às 15h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Leandro-1.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Leandro-1.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"ChatGPT no WhatsApp: Potencializando as Vendas e o atendimento ao cliente", com Leandro Neves | CEO na Weni</span>
@@ -1434,7 +1675,7 @@
                                         16h10 às 16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1454,7 +1695,7 @@
                                         16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1485,7 +1726,7 @@
                                         12h50 às 14h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Almoço"</span>
@@ -1503,7 +1744,7 @@
                                         14h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Altamiro-760x570-1.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Altamiro-760x570-1.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1522,7 +1763,7 @@
                                         14h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Roberto-Grota-Alterdata.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Roberto-Grota-Alterdata.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Existe ERP 100% web e de baixo custo?", com Roberto Grota | Gerente de Filial São Paulo / Alterdata</span>
@@ -1540,7 +1781,7 @@
                                         15h10 às 15h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Vivian-Carvalho.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Vivian-Carvalho.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"7 passos para uma implementação de ERP bem sucedida", com Vivian Carvalho | Account Manager Oracle Netsuite e Yara Santos | Pré-Vendas na Oracle NetSuite</span>
@@ -1558,7 +1799,7 @@
                                         15h50 às 16h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/patrick.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/patrick.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Decodificando as APIs de pagamento: quais as vantagens de implementar a tecnologia no seu software?", com Patrick Negri | CTO na iugu</span>
@@ -1577,7 +1818,7 @@
                                         16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Coffee Break"</span>
@@ -1607,7 +1848,7 @@
                                         12h50 às 14h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Almoço"</span>
@@ -1626,7 +1867,7 @@
                                         14h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/1637804028869.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/1637804028869.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Huawei Cloud - Everthing as a Service - Infraestrutura e Seguranca Cloud Huawei", com Gustavo Silva | Solution Architect and Product Manager na Huawei Cloud</span>
@@ -1644,7 +1885,7 @@
                                         14h50 às 15h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/pablo.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/pablo.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>" Desafios da adoção de nuvem para os sistemas de negócio", com Pablo Werneck | Diretor de negócios na Skymail Soluções em Nuvem e Diego Eloir | CEO da Skysec</span>
@@ -1662,7 +1903,7 @@
                                         15h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/Foto-Marcos-Barbosa.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/Foto-Marcos-Barbosa.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Como a SaveinCloud contribuiu no sucesso da Siglo Sistemas na nuvem", com Marcos Barbosa | Gerente de Marketing na SaveinCloud e Rogério Coelho Guimarães | CIO na Siglo Sistemas</span>
@@ -1680,7 +1921,7 @@
                                         15h50
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/1639663313630.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/1639663313630.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Negócios em momento de Disrupção - Customer Experience como diferencial competitivo", com Robson del Fiol | Head de Vendas e Marketing do Integra.Sky</span>
@@ -1699,7 +1940,7 @@
                                         16h10
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Palestra Reservada" | AWS</span>
@@ -1718,7 +1959,7 @@
                                         16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Coffee Break"</span>
@@ -1748,7 +1989,7 @@
                                             12h50 às 14h
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Almoço"</span>
@@ -1767,7 +2008,7 @@
                                             14h30
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/1637804028869.jpeg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/1637804028869.jpeg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Confiar para transformar - Tecnologias de certificação digital como elemento de diferenciação no mercado de software", com Rafael Godinho | CCO na BRy Tecnologia.
@@ -1786,7 +2027,7 @@
                                             14h50
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/Milton-Camargo-1.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/Milton-Camargo-1.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Transforme seu ERP em um Banco", com Milton Camargo | Head of Banking as a Service na Celcoin</span>
@@ -1804,7 +2045,7 @@
                                             15h10
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/Foto-600x600px.jpeg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/Foto-600x600px.jpeg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"O PIX coloca o Brasil no centro do mercado de pagamentos. Que desafios devemos encarar para aproveitar esta chance?", com Peterson F. dos Santos | CEO da Trio Tecnologia</span>
@@ -1822,7 +2063,7 @@
                                             15h30 às 15h50
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/bmp-bancos.png.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/bmp-bancos.png.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"O uso do Banco Digital por ERPs e Plataformas Digitais", com Carlos Benitez | CEO da BMP</span>
@@ -1840,7 +2081,7 @@
                                             16h10
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/palestrantes/Ticiana-Amorim.jpg.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/palestrantes/Ticiana-Amorim.jpg.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Seamless experience - a jornada imperceptível de conversão", com Ticiana Amorim | CEO & Founder da Aarin Tech-fin</span>
@@ -1859,7 +2100,7 @@
                                             16h30
                                           </div>
                                           <div class="col">
-                                            <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                            <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                           </div>
                                           <div class="col-9">
                                             <span>"Coffee Break"</span>
@@ -1889,7 +2130,7 @@
                                         8h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/credenciamento-600x600px-300x300.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/credenciamento-600x600px-300x300.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Credenciamento"</span>
@@ -1908,7 +2149,7 @@
                                         9h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Welcome Coffee"</span>
@@ -1927,7 +2168,7 @@
                                         10h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/s8chAyk4-1536x1122.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/s8chAyk4-1536x1122.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>
@@ -1947,7 +2188,7 @@
                                         12h50 às14h
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Almoco-2-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Almoco-2-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>"Almoço"</span>
@@ -1966,10 +2207,10 @@
                                         16h30
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/diversos/Coffee-1-300x300.png.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/diversos/Coffee-1-300x300.png.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
-                                        <span>"Coffee Break"                                        </span>
+                                        <span>"Coffee Break"</span>
                                       </div>
                                     </div>
                                   </div>
@@ -1985,7 +2226,7 @@
                                         17h00
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/thumbnail_fotoPerfilLinkedin-1.jpg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>MESA REDONDA :“O software como pilar da vantagem competitiva empresarial" Moderador: Luciano Itamar | Publisher do Grupo Portal ERP, com Hugo Dias | VP de Marketing & Vendas da Alterdata, Guilherme Tossulino | Diretor de Estratégia M&A da Softplan, Marcondes Faria | Diretor de Marketing & Produto da Microsoft, Gustavo Moussalli | VP Latam da Netsuite e Bruno Scaravelli | Head Corporativo de Marketing da Senior Sistemas</span>
@@ -2004,7 +2245,7 @@
                                         18h00
                                       </div>
                                       <div class="col">
-                                        <img src="../Assets/palestrantes/1639663313630.jpeg.webp" alt="Imagem do Card">
+                                        <img loading="lazy" src="../Assets/palestrantes/1639663313630.jpeg.png" alt="Imagem do Card">
                                       </div>
                                       <div class="col-9">
                                         <span>Happy Hour</span>
@@ -2069,240 +2310,237 @@
     </section>
 
     <div class="beneficios-do-evento">
-      <a href="https://pages.portalerp.com/erp-summit-2024-credenciamento"><button>Mais informação</button></a>
+      <a class="btn background-button" href="https://pages.portalerp.com/erp-summit-2024-credenciamento" role="button">Mais informação</a>
     </div>
     <!--EXPOSITORES-->
-    <section class="conteiner-expositores">
+    <section id="EX" class="conteiner-expositores">
         <h1>Expositores 2023</h1>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Sapphire</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-sapphire"></div>
+                <a href="https://www.nexxera.com/"><div class="conteudo-expositores-sapphire"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Diamond</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-Diamond-1">
-                </div>
-                <div class="conteudo-expositores-Diamond-2">
-                </div>
-                <div class="conteudo-expositores-Diamond-3">
-                </div>
+              <a href="https://www.microsoft.com/pt-br"><div class="conteudo-expositores-Diamond-1"></div></a>
+              <a href="https://www.netsuite.com/portal/home.shtml"><div class="conteudo-expositores-Diamond-2"></div></a>
+              <a href="https://www.meuk8.com.br/"><div class="conteudo-expositores-Diamond-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Diamond-l2-1"></div>
-                <div class="conteudo-expositores-Diamond-l2-2"></div>
-                <div class="conteudo-expositores-Diamond-l2-3"></div>
+              <a href="https://www.senior.com.br/"><div class="conteudo-expositores-Diamond-l2-1"></div></a>
+              <a href="https://aarin.com.br/"><div class="conteudo-expositores-Diamond-l2-2"></div></a>
+              <a href="https://www.softplan.com.br/"><div class="conteudo-expositores-Diamond-l2-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Diamond-l3-1"></div>
+              <a href="https://www.alterdata.com.br/"><div class="conteudo-expositores-Diamond-l3-1"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Platinum</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-Platinum-1"></div>
-                <div class="conteudo-expositores-Platinum-2"></div>
-                <div class="conteudo-expositores-Platinum-3"></div>
+              <a href="https://vockan.com/"><div class="conteudo-expositores-Platinum-1"></div></a>
+              <a href="https://www.manageengine.com/"><div class="conteudo-expositores-Platinum-2"></div></a>
+              <a href="https://www.mxm.com.br/"><div class="conteudo-expositores-Platinum-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Platinum-l2-1"></div>
-                <div class="conteudo-expositores-Platinum-l2-2"></div>
-                <div class="conteudo-expositores-Platinum-l2-3"></div>
+              <a href="https://www.celcoin.com.br/"><div class="conteudo-expositores-Platinum-l2-1"></div></a>
+              <a href="https://www.optidata.cloud/"><div class="conteudo-expositores-Platinum-l2-2"></div></a>
+              <a href="https://skyone.solutions/"><div class="conteudo-expositores-Platinum-l2-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Platinum-l3-1"></div>
-                <div class="conteudo-expositores-Platinum-l3-2"></div>
-                <div class="conteudo-expositores-Platinum-l3-3"></div>
+              <a href="https://weni.ai/"><div class="conteudo-expositores-Platinum-l3-1"></div></a>
+              <a href="https://aws.amazon.com/pt/"><div class="conteudo-expositores-Platinum-l3-2"></div></a>
+              <a href="https://arquivei.com.br/"><div class="conteudo-expositores-Platinum-l3-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Platinum-l4-1"></div>
+              <a href="https://www.huaweicloud.com/intl/pt-br/"><div class="conteudo-expositores-Platinum-l4-1"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Gold</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-Gold-1"></div>
-                <div class="conteudo-expositores-Gold-2"></div>
-                <div class="conteudo-expositores-Gold-3"></div>
+              <a href="https://saveincloud.com/pt/"><div class="conteudo-expositores-Gold-1"></div></a>
+              <a href="https://edutivo.com.br/"><div class="conteudo-expositores-Gold-2"></div></a>
+              <a href="https://www.iugu.com/"><div class="conteudo-expositores-Gold-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Gold-l2-1"></div>
-                <div class="conteudo-expositores-Gold-l2-2"></div>
-                <div class="conteudo-expositores-Gold-l2-3"></div>
+              <a href="https://www.riosoft.com.br/"><div class="conteudo-expositores-Gold-l2-1"></div></a>
+              <a href="https://nasajon.com.br/"><div class="conteudo-expositores-Gold-l2-2"></div></a>
+              <a href="https://skymail.com.br/"><div class="conteudo-expositores-Gold-l2-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Gold-l3-1"></div>
-                <div class="conteudo-expositores-Gold-l3-2"></div>
-                <div class="conteudo-expositores-Gold-l3-3"></div>
+              <a href="https://www.telcomanager.com/"><div class="conteudo-expositores-Gold-l3-1"></div></a>
+              <a href="https://www.centricsoftware.com/pt-pt/"><div class="conteudo-expositores-Gold-l3-2"></div></a>
+              <a href="https://www.trio.com.br/en"><div class="conteudo-expositores-Gold-l3-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Gold-l4-1"></div>
-                <div class="conteudo-expositores-Gold-l4-2"></div>
-                <div class="conteudo-expositores-Gold-l4-3"></div>
+              <a href="https://ottech.com.br/"><div class="conteudo-expositores-Gold-l4-1"></div></a>
+              <a href="https://www.erpflex.com.br/"><div class="conteudo-expositores-Gold-l4-2"></div></a>
+              <a href="https://www.bry.com.br/"><div class="conteudo-expositores-Gold-l4-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Gold-l5-1"></div>
-                <div class="conteudo-expositores-Gold-l5-2"></div>
+              <a href="https://moneyp.com.br/"><div class="conteudo-expositores-Gold-l5-1"></div></a>
+              <a href="#"><div class="conteudo-expositores-Gold-l5-2"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Silver</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-l1-1"></div>
-                <div class="conteudo-expositores-l1-2"></div>
-                <div class="conteudo-expositores-l1-3"></div>
+              <a href="https://www.galaxpay.com.br/"><div class="conteudo-expositores-l1-1"></div></a>
+              <a href="https://www.genexus.com/pt/"><div class="conteudo-expositores-l1-2"></div></a>
+              <a href="https://foccoerp.com.br/"><div class="conteudo-expositores-l1-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l2-1"></div>
-                <div class="conteudo-expositores-l2-2"></div>
-                <div class="conteudo-expositores-l2-3"></div>
+              <a href="https://datasafer.com.br/"><div class="conteudo-expositores-l2-1"></div></a>
+              <a href="https://gestaoclick.com.br/"><div class="conteudo-expositores-l2-2"></div></a>
+              <a href="https://grvsoftware.com.br/"><div class="conteudo-expositores-l2-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l3-1"></div>
-                <div class="conteudo-expositores-l3-2"></div>
-                <div class="conteudo-expositores-l3-3"></div>
+              <a href="https://ndd.tech/"><div class="conteudo-expositores-l3-1"></div></a>
+              <a href="https://www.ploomes.com/"><div class="conteudo-expositores-l3-2"></div></a>
+              <a href="https://erpm8.cloud/"><div class="conteudo-expositores-l3-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l4-1"></div>
-                <div class="conteudo-expositores-l4-2"></div>
-                <div class="conteudo-expositores-l4-3"></div>
+              <a href="#"><div class="conteudo-expositores-l4-1"></div></a>
+              <a href="https://www.humtech.com.br/"><div class="conteudo-expositores-l4-2"></div></a>
+              <a href="https://www.bimachine.com.br/"><div class="conteudo-expositores-l4-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l5-1"></div>
-                <div class="conteudo-expositores-l5-2"></div>
-                <div class="conteudo-expositores-l5-3"></div>
+              <a href="https://materiais.opendatacenter.com.br/servidorbaremetal2?https://materiais.opendatacenter.com.br/servidorbaremetal2&utm_source=GoogleADs&utm_campaing=&utm_medium=cpc&utm_content=&gclid=Cj0KCQjwzdOlBhCNARIsAPMwjbyPfxwV_t7fz_wRlhBwgswbjssdqKsar5Sq-BsxkAuVTRerpej_OfAaAsjeEALw_wcB"><div class="conteudo-expositores-l5-1"></div></a>
+              <a href="https://sharkit.com.br/"><div class="conteudo-expositores-l5-2"></div></a>
+              <a href="https://www.allstrategy.com.br/"><div class="conteudo-expositores-l5-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l6-1"></div>
-                <div class="conteudo-expositores-l6-2"></div>
-                <div class="conteudo-expositores-l6-3"></div>
+              <a href="https://nossosolucoes.com.br/"><div class="conteudo-expositores-l6-1"></div></a>
+              <a href="https://www.cma.com.br/"><div class="conteudo-expositores-l6-2"></div></a>
+              <a href="https://videosoft.com.br/"><div class="conteudo-expositores-l6-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l7-1"></div>
-                <div class="conteudo-expositores-l7-2"></div>
-                <div class="conteudo-expositores-l7-3"></div>
+              <a href="https://www.webautomacao.com.br/"><div class="conteudo-expositores-l7-1"></div></a>
+              <a href="https://ixcsoft.com.br/"><div class="conteudo-expositores-l7-2"></div></a>
+              <a href="https://tivit.com/"><div class="conteudo-expositores-l7-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l8-1"></div>
-                <div class="conteudo-expositores-l8-2"></div>
-                <div class="conteudo-expositores-l8-3"></div>
+              <a href="https://analize.com.br/"><div class="conteudo-expositores-l8-1"></div></a>
+              <a href="https://www.cronapp.io/"><div class="conteudo-expositores-l8-2"></div></a>
+              <a href="https://arquivar.com.br/"><div class="conteudo-expositores-l8-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l9-1"></div>
-                <div class="conteudo-expositores-l9-2"></div>
-                <div class="conteudo-expositores-l9-3"></div>
+              <a href="https://crmpiperun.com/"><div class="conteudo-expositores-l9-1"></div></a>
+              <a href="https://www.bancobs2.com.br/"><div class="conteudo-expositores-l9-2"></div></a>
+              <a href="https://belvo.com/pt-br/"><div class="conteudo-expositores-l9-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l10-1"></div>
-                <div class="conteudo-expositores-l10-2"></div>
-                <div class="conteudo-expositores-l10-3"></div>
+              <a href="https://www.magazineluiza.com.br/"><div class="conteudo-expositores-l10-1"></div></a>
+              <a href="https://www.tecnicon.com.br/"><div class="conteudo-expositores-l10-2"></div></a>
+              <a href="https://apipass.com.br/"><div class="conteudo-expositores-l10-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l11-1"></div>
-                <div class="conteudo-expositores-l11-2"></div>
-                <div class="conteudo-expositores-l11-3"></div>
+              <a href="https://www.eme4.inf.br/"><div class="conteudo-expositores-l11-1"></div></a>
+              <a href="https://integratebrasil.com/"><div class="conteudo-expositores-l11-2"></div></a>
+              <a href="https://evernow.com.br/"><div class="conteudo-expositores-l11-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l12-1"></div>
-                <div class="conteudo-expositores-l12-2"></div>
-                <div class="conteudo-expositores-l12-3"></div>
+              <a href="https://www.multipluscard.com.br/"><div class="conteudo-expositores-l12-1"></div></a>
+              <a href="https://sensrit.com.br/"><div class="conteudo-expositores-l12-2"></div></a>
+              <a href="https://wktechnology.com.br/"><div class="conteudo-expositores-l12-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-l13-1"></div>
+              <a href="https://www.nexxer.com.br/"><div class="conteudo-expositores-l13-1"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Parceria Meio Ambiente e Sustentabilidade</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-pmas"></div>
+              <a href="https://www.greenpeace.org/brasil/"><div class="conteudo-expositores-pmas"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Tecnologia para Salvar Vidas</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-tpsv"></div>
+              <a href="https://doe.msf.org.br/"><div class="conteudo-expositores-tpsv"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Apoiadores</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-Apoiadores-1"></div>
-                <div class="conteudo-expositores-Apoiadores-2"></div>
-                <div class="conteudo-expositores-Apoiadores-3"></div>
+              <a href="https://abes.com.br/"><div class="conteudo-expositores-Apoiadores-1"></div></a>
+              <a href="https://brasscom.org.br/"><div class="conteudo-expositores-Apoiadores-2"></div></a>
+              <a href="https://assespro-sp.org.br/"><div class="conteudo-expositores-Apoiadores-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Apoiadores-l2-1"></div>
-                <div class="conteudo-expositores-Apoiadores-l2-2"></div>
-                <div class="conteudo-expositores-Apoiadores-l2-3"></div>
+              <a href="https://www.fecomercio.com.br/"><div class="conteudo-expositores-Apoiadores-l2-1"></div></a>
+              <a href="https://www.acate.com.br/"><div class="conteudo-expositores-Apoiadores-l2-2"></div></a>
+              <a href="https://www.acate.com.br/"><div class="conteudo-expositores-Apoiadores-l2-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Apoiadores-l3-1"></div>
-                <div class="conteudo-expositores-Apoiadores-l3-2"></div>
-                <div class="conteudo-expositores-Apoiadores-l3-3"></div>
+              <a href="https://www.startse.com/"><div class="conteudo-expositores-Apoiadores-l3-1"></div></a>
+              <a href="https://inforchannel.com.br/"><div class="conteudo-expositores-Apoiadores-l3-2"></div></a>
+              <a href="https://cryptoid.com.br/"><div class="conteudo-expositores-Apoiadores-l3-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Apoiadores-l4-1"></div>
-                <div class="conteudo-expositores-Apoiadores-l4-2"></div>
-                <div class="conteudo-expositores-Apoiadores-l4-3"></div>
+              <a href="https://mundocoop.com.br/"><div class="conteudo-expositores-Apoiadores-l4-1"></div></a>
+              <a href="https://administradores.com.br/"><div class="conteudo-expositores-Apoiadores-l4-2"></div></a>
+              <a href="https://www.serpro.gov.br/"><div class="conteudo-expositores-Apoiadores-l4-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Apoiadores-l5-1"></div>
-                <div class="conteudo-expositores-Apoiadores-l5-2"></div>
-                <div class="conteudo-expositores-Apoiadores-l5-3"></div>
+              <a href="https://acicampinas.com.br/"><div class="conteudo-expositores-Apoiadores-l5-1"></div></a>
+              <a href="https://www.abbc.org.br/"><div class="conteudo-expositores-Apoiadores-l5-2"></div></a>
+              <a href="https://ios.org.br/"><div class="conteudo-expositores-Apoiadores-l5-3"></div></a>
             </div>
             <div class="expositores">
-                <div class="conteudo-expositores-Apoiadores-l6-1"></div>
+              <a href="https://sesconcampinas.org.br/"><div class="conteudo-expositores-Apoiadores-l6-1"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Credenciamento Oficial</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-Credenciamento"></div>
+              <a href="https://bomevento.com.br/"><div class="conteudo-expositores-Credenciamento"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Montadora Oficial</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores"></div>
-                <div class="conteudo-expositores-montadora-1-2"></div>
-                <div class="conteudo-expositores"></div>
+              <a href="#"><div class="conteudo-expositores"></div></a>
+              <a href="http://proportio.com.br/"><div class="conteudo-expositores-montadora-1-2"></div></a>
+              <a href="#"><div class="conteudo-expositores"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Hotel Parceiro</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores"></div>
-                <div class="conteudo-expositores-hotel-parceiro-l2"></div>
-                <div class="conteudo-expositores"></div>
+              <a href="#"><div class="conteudo-expositores"></div></a>
+              <a href="https://www.novotelcenternorte.com.br/"><div class="conteudo-expositores-hotel-parceiro-l2"></div></a>
+              <a href="#"><div class="conteudo-expositores"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Promotora</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores"></div>
-                <div class="conteudo-expositores-promotora-l2"></div>
-                <div class="conteudo-expositores"></div>
+              <a href="#"><div class="conteudo-expositores"></div></a>
+              <a href="https://ixfeiras.com/"><div class="conteudo-expositores-promotora-l2"></div></a>
+              <a href="#"><div class="conteudo-expositores"></div></a>
             </div>
         </div>
         <div class="conteiner-interno">
             <h1 class="titulo-expositores">Organização</h1>
             <hr style="size:10; color: orange; margin: 1px;" noshade="10%"/>
             <div class="expositores">
-                <div class="conteudo-expositores-Organização"></div>
+              <a href="https://portalerp.com/"><div class="conteudo-expositores-Organização"></div></a>
             </div>
         </div>
     </section>
@@ -2313,28 +2551,24 @@
             <div class="wrapper">
                 <i id="left" class="fa-solid fa-angle-left"></i>
                 <div class="carousel">
-                    <img src="Assets/diversos1/ERPSummit-00001-min-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00091-min-scaled.jpg" alt="img">
-                    <img src="Assets/beneficios-evento/ERPSummit-00610-scaled.jpg" alt="img">
-                    <img src="Assets/beneficios-evento/ERPSummit-00615-scaled.jpg" alt="img">
-                    <img src="Assets/beneficios-evento/ERPSummit-00625-scaled.jpg" alt="img">
-                    <img src="Assets/carousel/ERP-SUMMIT_-706-min.jpg" alt="img">
-                    <img src="Assets/carousel/ERP-SUMMIT_-678-min.jpg" alt="img">
-
-                    <img src="Assets/carousel/ERPSummit-00363-scaled.jpg" alt="img">
-                    <img src="Assets/beneficios-evento/ERPSummit-00557-min-scaled.jpg" alt="img">
-                    <img src="Assets/beneficios-evento/ERPSummit-00347-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00101-min-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00131-min-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00138-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00151-min-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00168-min-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00215-min-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00289-min-scaled.jpg" alt="img">
-                    <img src="Assets/diversos1/ERPSummit-00328-min-1536x1024.jpg.webp" alt="img">
-                    <img src="Assets/diversos/ERP-SUMMIT_-743-min.jpg">
-                    <img src="Assets/diversos/EVENTO-EPR-FOTOS-MARTINS-FOTO-GUSTAVO-BRITO-16-04-2019-127-copia-1-scaled.jpg" alt="img">
-                    <img src="Assets/diversos/palco.jpg" alt="img">
+                    <img loading="lazy" src="Assets/beneficios-evento/ERPSummit-00610-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/beneficios-evento/ERPSummit-00615-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/beneficios-evento/ERPSummit-00625-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/carousel/ERP-SUMMIT_-706-min.jpg" alt="img">
+                    <img loading="lazy" src="Assets/carousel/ERP-SUMMIT_-678-min.jpg" alt="img">
+                    <img loading="lazy" src="Assets/carousel/EVENTO-EPR-FOTOS-MARTINS-FOTO-MARTINS-16-04-2019-61-copia-1-1-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/beneficios-evento/ERPSummit-00557-min-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/beneficios-evento/ERPSummit-00347-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERP-Summit-18-3.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERP-SUMMIT_-743-min.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERP-SUMMIT_-753-min.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERP-SUMMIT_-768-min.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERP-SUMMIT_-770-min.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERP-SUMMIT_-772-min.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERPSummit-00001-min-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/ERP-SUMMIT_-743-min.jpg" alt="img">
+                    <img loading="lazy"  src="Assets/diversos/EVENTO-EPR-FOTOS-MARTINS-FOTO-GUSTAVO-BRITO-16-04-2019-127-copia-1-scaled.jpg" alt="img">
+                    <img loading="lazy" src="Assets/diversos/palco.jpg" alt="img">
                 </div>
                 <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
@@ -2347,6 +2581,11 @@
     </footer>
     <!--SCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"  crossorigin="anonymous"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"  crossorigin="anonymous"></script>
+    <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
+    
     <script src="script.js" defer></script>
 </body>
+
 </html>
